@@ -6,54 +6,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hello Bulma!</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <section class="hero is-primary is-fullheight">
-    <div class="hero-body">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-6-tablet is-4-desktop is-3-widescreen is-3-fullhd">
-            <form action="" class="box ">
-              <div class="field field has-text-centered">
-                <img src="logo.png" alt="" width="150">
-              </div>
-              <div class="field">
-                <label for="" class="label">Email</label>
-                <div class="control has-icons-left">
-                  <input type="email" class="input" placeholder="Введите Email">
-                  <span class="icon is-small is-left">
-                    <i class="fa fa-envelope"></i>
-                  </span>
+  <header>
+    <div class="header">
+      <section class="section">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-2 has-text-centered-mobile has-text-left">
+              <a href="#">
+                <img src="img/logo.svg" alt="Logo" width="160" height="72">
+              </a>
+            </div>
+            <div class="column">
+              <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                  <a role="button" class="navbar-burger" data-target="navmenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
                 </div>
-              </div>
-              <div class="field">
-                <label for="" class="label">Телефон</label>
-                <div class="control has-icons-left">
-                  <input type="tel" class="input" placeholder="Введите номер телефона">
-                  <span class="icon is-small is-left">
-                    <i class="fa fa-phone"></i>
-                  </span>
+                <div class="navbar-menu " id="navmenu">
+                  <div class="navbar-start is-size-5-desktop">
+                    <a href="#" class="navbar-item">Приемущества</a>
+                    <a href="#" class="navbar-item">Отзывы</a>
+                    <a href="#" class="navbar-item">Блог</a>
+                  </div>
+                  <div class="navbar-end">
+                    <a href="tel:88002225022" class="navbar-item is-size-3-desktop">8(800) 222 50 22</a>
+                  </div>
                 </div>
-              </div>
-
-              <div class="field">
-                <div class="control">
-                  <button class="button is-success">
-                    Войти
-                  </button>
-                </div>
-              </div>
-
-            </form>
-
+              </nav>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      <script>
+        $(document).ready(function () {
+
+          // Check for click events on the navbar burger icon
+          $(".navbar-burger").click(function () {
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+
+          });
+        });
+      </script>
+
     </div>
-  </section>
+  </header>
+  <main class="main">
+
+    <div class="container has-text-centered">
+      <img src="img/top-form-image.webp" alt="Taxi" width="120" height="45">
+      <h1 class="has-text-weight-bold is-size-4 is-size-1-desktop">Таксопарк, с которым легко работать</h1>
+      <p class="mt-3 is-size-5  ">Подключаем к агрегаторам такси</p>
+      <button class="button is-info mt-6 is-large is-rounded">Подключиться</button>
+      <section class = "section">
+        <div class = "container">
+          
+           
+           
+           <p>
+              <a class = "button is-primary modal-button" data-target = "#modal">Launch Card modal</a>
+           </p>
+           
+           <div id = "modal" class = "modal">
+              <div class = "modal-background"></div>
+              <div class = "modal-card">
+                 <header class = "modal-card-head">
+                    <p class = "modal-card-title">Modal Card</p>
+                    <button class = "delete" aria-label = "close"></button>
+                 </header>
+                 
+                 <section class = "modal-card-body">
+                    <div class = "content">
+                       <h1>Level One</h1>
+                       <p>
+                          This is simple text. This is simple text. 
+                          This is simple text. This is simple text.
+                       </p>
+                       
+                       
+                    </div>
+                 </section>
+                 
+              </div>
+           </div>
+        </div>
+     </section>
+     
+     <script>
+        $(".modal-button").click(function() {
+           var target = $(this).data("target");
+           $("html").addClass("is-clipped");
+           $(target).addClass("is-active");
+        });
+        
+        $(".delete").click(function() {
+           $("html").removeClass("is-clipped");
+           $(this).parent().removeClass("is-active");
+        });
+     </script>
+    </div>
+  </main>
 </body>
 
 </html>
