@@ -79,13 +79,13 @@
         background-color: #faf9fa;
     }
     
-    .why_content {
+    .content {
         margin-top: 3rem;
         background-color: #fff;
         border-radius: 1rem;
     }
     
-    .why_content_columns {
+    .content_columns {
         padding: 2rem 3rem;
     }
     
@@ -102,16 +102,16 @@
         font-weight: bold;
     }
     
-    .number-one-circle-wrap {
+    .number-circle-wrap {
         position: relative;
         box-sizing: border-box;
     }
     
-    .number-one-circle {
+    .number-circle {
         position: absolute;
-        left: -64px;
+        left: -1.7rem;
         right: 0;
-        top: -139px;
+        top: 3rem;
         padding-top: 0.8rem;
         width: 56px;
         height: 56px;
@@ -130,7 +130,7 @@
         z-index: 2;
     }
     
-    .why_field {
+    .content_field {
         background-color: #faf9fa;
         border-radius: 0.7rem;
         padding: 4rem 1rem 1rem 1rem;
