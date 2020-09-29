@@ -1,23 +1,28 @@
+    body {
+        color: #181818;
+    }
+    
     header {
         background-color: whitesmoke;
     }
     
     .navbar {
+        color: #181818!important;
         background-color: whitesmoke;
     }
     
     .top-bg {
         background: url(img/top-header-bg.jpg)center center no-repeat;
         /* position: absolute; */
-        height: 577px;
+        height: 757px;
         background-size: cover;
         top: 2rem;
         left: 0;
         width: 100%;
     }
     
-    .main {
-        margin-top: 7rem;
+    .main-screen {
+        margin-top: 5rem;
     }
     
     .discount-circle {
@@ -46,6 +51,7 @@
         font-weight: bold;
         line-height: 1.1;
         box-sizing: border-box;
+        z-index: 2;
     }
     
     .circle span {
@@ -56,14 +62,108 @@
         margin-bottom: 1rem;
     }
     
+    .main {
+        background-color: #faf9fa;
+        height: 100%;
+    }
+    
     .cooperation {
         min-height: 10rem;
-        background-color: white;
+        background-color: #fff;
         border-radius: 15px;
-        /* position: absolute; */
         width: 100%;
+        margin-top: -8rem;
     }
     
     .why {
         background-color: #faf9fa;
     }
+    
+    .why_content {
+        margin-top: 3rem;
+        background-color: #fff;
+        border-radius: 1rem;
+    }
+    
+    .why_content_columns {
+        padding: 2rem 3rem;
+    }
+    
+    .we-toyou {
+        margin-top: 5rem;
+    }
+    
+    .plus {
+        position: absolute;
+        transform: translateY(-68%);
+        left: 3rem;
+        font-size: 34px;
+        color: #f4b53f;
+        font-weight: bold;
+    }
+    
+    .number-one-circle-wrap {
+        position: relative;
+        box-sizing: border-box;
+    }
+    
+    .number-one-circle {
+        position: absolute;
+        left: -64px;
+        right: 0;
+        top: -139px;
+        padding-top: 0.8rem;
+        width: 56px;
+        height: 56px;
+        text-align: center;
+        border-radius: 45px;
+        background-color: #f4b53f;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+        box-shadow: 0px 10px 20px 0px rgba(244, 181, 63, 0.6);
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.1;
+        box-sizing: border-box;
+        z-index: 2;
+    }
+    
+    .why_field {
+        background-color: #faf9fa;
+        border-radius: 0.7rem;
+        padding: 4rem 1rem 1rem 1rem;
+        margin-top: -3rem;
+    }
+    
+    @media (max-width: 768px) {
+        .main-screen {
+            margin-top: 0!important;
+        }
+        .cooperation {
+            padding-top: 2rem;
+        }
+        .cooperation .level-item {
+            padding-bottom: 2rem;
+        }
+    }
+    /* Экстрамалые девайсы («телефоны», < 576px) Нет @media,
+    т.к. это по умолчанию в Bootstrap Малые девайсы («ландшафтные телефоны», >=576px) @media (min-width: 576px) {
+        ...
+    }
+    
+    // Средние девайсы («таблетки», >= 768px)
+    @media (min-width: 768px) {
+        ...
+    }
+    
+    // Большие девайсы (десктопы, >= 992px)
+    @media (min-width: 992px) {
+        ...
+    }
+    
+    // Экстрабольшие девайсы (большие десктопы, >= 1200px)
+    @media (min-width: 1200px) {
+        ...
+    } */

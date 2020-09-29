@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
@@ -16,12 +15,11 @@
     <header>
         <div class="header">
             <section class="section top-bg">
-
-                <div class="container">
+                <div class="main-menu container">
                     <div class="columns is-vcentered">
                         <div class="column is-2 has-text-centered-mobile has-text-left">
                             <a href="#">
-                                <img src="img/logo.svg" alt="Logo" width="160" height="72">
+                                <img src="img/logo.svg" alt="Логотип" width="160" height="72">
                             </a>
                         </div>
                         <div class="column">
@@ -47,12 +45,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="container has-text-centered ">
+                <div class="main-screen container has-text-centered">
                     <img src="img/top-form-image.webp" alt="Taxi" width="120" height="45">
                     <h1 class="has-text-weight-bold is-size-4 is-size-1-desktop">Таксопарк, с которым легко работать</h1>
                     <p class="mt-3 is-size-5  ">Подключаем к агрегаторам такси</p>
                     <button class="button is-primary modal-button is-info mt-6 is-large is-rounded" data-target="#modal">Подключиться</button>
-
                     <div class="discount-circle">
                         <div class="circle">
                             2% <span>комиссия парка</span>
@@ -69,7 +66,6 @@
                                         <p class="modal-card-title">Подключиться</p>
                                         <button class="delete" id="closetop" aria-label="close"></button>
                                     </header>
-
                                     <section class="modal-card-body">
                                         <div class="content">
                                             <div class="content is-large">
@@ -106,12 +102,10 @@
                                                 </span>
                                                 </div>
                                             </div>
-
                                             <div class="field is-grouped ">
                                                 <div class="control">
                                                     <button class="button is-link">Подключиться</button>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </section>
@@ -139,61 +133,79 @@
                     });
                 });
             </script>
-
-
-
-
-
-
         </div>
     </header>
-    <main class="main mt-6">
-        <section class="section">
+    <main class="main">
+        <section class="section cooperation-wrap">
             <div class="container">
-                <nav class="level is-multiline cooperation">
+                <nav class="level cooperation">
                     <div class="level-item has-text-centered">
                         <div>
-                            <img src="img/yandex.webp" alt="">
+                            <img src="img/yandex.webp" alt="Яндекс Такси">
                         </div>
                     </div>
                     <div class="level-item has-text-centered">
                         <div>
-                            <img src="img/citymobi.webp" alt="">
+                            <img src="img/citymobi.webp" alt="Ситимобил Такси">
                         </div>
                     </div>
                     <div class="level-item has-text-centered">
                         <div>
-                            <img src="img/Gett.webp" alt="">
+                            <img src="img/Gett.webp" alt="Гетт Такси">
                         </div>
                     </div>
                     <div class="level-item has-text-centered">
                         <div>
-                            <img src="img/Bolt.webp" alt="">
+                            <img src="img/Bolt.webp" alt="Больт Такси">
                         </div>
                     </div>
                     <div class="level-item has-text-centered">
                         <div>
-                            <img src="img/didi.webp" alt="">
+                            <img src="img/didi.webp" alt="Диди Такси">
                         </div>
                     </div>
                 </nav>
             </div>
         </section>
-
         <section class="section why">
-            <div class="container has-text-centered">
+            <div class="container why_title has-text-centered">
                 <h1 class="has-text-weight-bold is-size-4 is-size-1-desktop">Почему с нами легко?</h1>
-
                 <p class="mt-3 is-size-5  ">Простые выплаты, честные комиссии и отзывчивая поддержка.</p>
-
             </div>
-
+            <div class="container why_content">
+                <div class="columns why_content_columns ">
+                    <div class="column is-two-fifths">
+                        <h3 class="has-text-weight-bold is-size-4 is-size-3-desktop">2 типа выплат</h3>
+                        <p>Выбирай, какой тебе удобнее</p>
+                        <div class="columns we-toyou">
+                            <div class="plus">+</div>
+                            <div class="number-one-circle-wrap">
+                                <div class="number-one-circle">№1</div>
+                            </div>
+                            <div class="column is-three-fifths">
+                                <p class="has-text-weight-bold is-size-4 is-size-5-desktop">Мы сами оформим тебе карту Тинькофф с доставкой в руки</p>
+                                <p>Ситипарк работает с любыми банковскими картами, но если захочешь карту Тинькофф, только дай знать. Обслуживание и доставка курьером — бесплатно.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="img/credit.webp" alt="Выплата на карту Тинькофф">
+                        <div class="why_field">
+                            <p class="has-text-weight-bold is-size-4 is-size-5-desktop">Ежедневно на карту Тинькофф банка</p>
+                            <p>Без комиссии. Автоматический вывод с 12.00 по 14.00 по Мск</p>
+                        </div>
+                    </div>
+                    <div class="column ">
+                        <img src="img/app.webp" alt="Выплата через приложение">
+                        <div class="why_field">
+                            <p class="has-text-weight-bold is-size-4 is-size-5-desktop">Моментально через приложение Jump Taxi</p>
+                            <p>Комиссия 1% на Тинькофф и 1,5% на остальные карты</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-
     </main>
-
-
 </body>
 
 </html>
