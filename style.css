@@ -1,4 +1,6 @@
-    body {
+    body,
+    h3,
+    p {
         color: #181818;
     }
     
@@ -79,13 +81,13 @@
         background-color: #faf9fa;
     }
     
-    .content {
+    .content-box {
         margin-top: 3rem;
         background-color: #fff;
         border-radius: 1rem;
     }
     
-    .content_columns {
+    .content-box_columns {
         padding: 2rem 3rem;
     }
     
@@ -130,11 +132,85 @@
         z-index: 2;
     }
     
-    .content_field {
+    .content-box_field {
         background-color: #faf9fa;
         border-radius: 0.7rem;
         padding: 4rem 1rem 1rem 1rem;
         margin-top: -3rem;
+    }
+    
+    .content-box_title {
+        padding-left: 3rem;
+        padding-top: 2rem;
+    }
+    
+    .recommend_column {
+        background-color: #fff;
+        border-radius: 1rem;
+        padding: 4rem 2rem;
+    }
+    
+    .relative {
+        position: relative;
+    }
+    
+    .foto {
+        position: absolute;
+        border-radius: 3rem;
+        top: -90%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    
+    .calling-bg {
+        background: url(img/calling-footer.webp) center no-repeat;
+        min-height: 30rem;
+    }
+    
+    .footer_logo {
+        max-width: 300px;
+    }
+    
+    .fa-vk,
+    .fa-instagram {
+        font-size: 48px;
+        color: #f4b53f;
+    }
+    
+    hr {
+        border: 0;
+        height: 1px;
+        background: #000;
+        background-image: -webkit-linear-gradient(left, #fff, #000, #fff);
+    }
+    
+    .home {
+        display: block;
+        position: fixed;
+        background-color: #f4b53f;
+        width: 11rem;
+        height: 3rem;
+        border-radius: 2rem;
+        font-size: 1.3rem;
+        text-align: center;
+        color: #181818;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 0.4rem;
+        right: 2rem;
+        top: 3rem;
+        z-index: 2;
+    }
+    
+    .blog_description {
+        padding: 0.7rem 0;
+    }
+    
+    .blog_date {
+        font-size: 12px;
+        font-style: italic;
     }
     
     @media (max-width: 768px) {
@@ -146,6 +222,9 @@
         }
         .cooperation .level-item {
             padding-bottom: 2rem;
+        }
+        .is-parent {
+            margin-top: 3rem;
         }
     }
     /* Экстрамалые девайсы («телефоны», < 576px) Нет @media,
